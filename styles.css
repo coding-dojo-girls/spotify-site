@@ -3,7 +3,6 @@
   background-position: right 60px bottom 150%;
   background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
 }
 
 .navbar {
@@ -19,16 +18,11 @@
   color: white;
 }
 
-.navbar__items li[role="separator"] {
-  margin: 0 10px;
-}
-
 .navbar__item {
   padding: 28px 17px;
   text-decoration: none;
   font-weight: bold;
   color: white;
-  font-size: 12px;
 }
 
 .navbar__item:hover,
@@ -52,28 +46,33 @@
   margin-top: 32px;
   text-transform: uppercase;
   font-weight: bold;
-  transition: all .3s ease-in-out;
+  transition: background-color .2s ease-in-out;
 }
 
 .main-content a:hover {
   background-color: #1ed760;
 }
 
-.main__header {
-  font-size: 40px;
+.main-content__header {
+  font-size: 60px;
 }
 
-.main__subheader {
-  font-weight: bold;
+.main-content__subheader {
   font-size: 24px;
+  font-weight: bold;
 }
 
-.message {
-  font-size: 12px;
-  color: white;
+.terms {
+  color: #efefef;
   text-align: center;
+  font-size: 11px;
 }
 
-.message a {
+.terms > span > a {
   color: inherit;
+}
+
+.terms > span > a:hover,
+.terms > span > a:focus {
+  color: white;
 }
