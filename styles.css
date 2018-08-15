@@ -1,5 +1,7 @@
 .body {
-  background-color: #5ea3ff;
+  background: #5ea3ff url(https://www.scdn.co/i/home/segmented-home/premium_dancer.png);
+  background-position: right 60px bottom 150%;
+  background-repeat: no-repeat;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -13,14 +15,19 @@
 .navbar__items {
   display: flex;
   list-style-type: none;
-  font-weight: bold;
   color: white;
 }
 
 .navbar__item {
   padding: 28px 17px;
   text-decoration: none;
+  font-weight: bold;
   color: white;
+}
+
+.navbar__item:hover,
+.navbar__item:focus {
+  color: #2D46B9;
 }
 
 .main-content {
@@ -39,8 +46,33 @@
   margin-top: 32px;
   text-transform: uppercase;
   font-weight: bold;
+  transition: background-color .2s ease-in-out;
 }
 
 .main-content a:hover {
   background-color: #1ed760;
+}
+
+.main-content__header {
+  font-size: 60px;
+}
+
+.main-content__subheader {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.terms {
+  color: #efefef;
+  text-align: center;
+  font-size: 11px;
+}
+
+.terms > span > a {
+  color: inherit;
+}
+
+.terms > span > a:hover,
+.terms > span > a:focus {
+  color: white;
 }
